@@ -35,6 +35,8 @@ from dslinter.checkers.hyperparameters_scikitlearn import HyperparameterScikitLe
 from dslinter.checkers.nan_numpy import NanNumpyChecker
 from dslinter.checkers.scaler_missing_scikitlearn import ScalerMissingScikitLearnChecker
 
+from dslinter.checkers.dataset_api_conflict.dataset_api_conflict import DatasetApiConflict
+
 
 def register(linter):
     """
@@ -75,3 +77,4 @@ def register(linter):
     linter.register_checker(ForwardPytorchChecker(linter))
     linter.register_checker(ModeTogglingPytorchChecker(linter))
     linter.register_checker(GradientClearPytorchChecker(linter))
+    linter.register_checker(DatasetApiConflict(linter))

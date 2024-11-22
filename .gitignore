@@ -146,3 +146,5 @@ docs/gh-pages/public
 
 # poetry
 poetry.lock
+
+data

@@ -42,16 +42,17 @@ homepage = "https://pypi.org/project/dslinter/"
 keywords = ["machine learning", "software engineering"]
 
 [tool.poetry.dependencies]
-python = "^3.7"  # Compatible python versions must be declared here
+python = "^3.10"  # Compatible python versions must be declared here
 toml = "^0.10"
 pylint = { version = "~2.12.2" }
 astroid = { version = "~2.9.3" }
 mypy = { version = "~0.931" }
 data-science-types = { version = "~0.2.23" }
 pyspark-stubs = {version = "~3.0.0.post3" }
+pandas = "^2.2.3"
 
 [tool.poetry.dev-dependencies]
-pytest = "^3.0"
+pytest = "^6.2.5"
 pytest-cov = "^2.4"
 
 # [tool.poetry.scripts]
